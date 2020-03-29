@@ -26,13 +26,6 @@ int main()
 		
 		printf("\n");
 	}
-	printf("\n\n\n\n");	
-	printf(" \t\t\t-------------------------Before Scheduling------------------------\n\n\n"); 
-	printf("\t\t\t\tProcess ID\tArrival Time\tBurst Time\n"); 
-	for(i=0; i<n; i++) 
-	{ 
-		printf("\n\t\t\t\t\tP%d\t\t%d\t\t%d\t", p[i],arrival_time[i],burst_time[i],"\n"); 
-	}
 
 	//To calculate the earliest(shortest) arrival time.
 	a=arrival_time[0];
