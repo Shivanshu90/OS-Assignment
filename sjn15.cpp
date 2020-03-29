@@ -17,22 +17,13 @@ int main()
 		printf("...Process %d...", (i+1),"...\n"); 
 		printf("\nEnter Process Id: "); 
 		scanf("%d",&p[i]); 
-		y:
+		
 		printf("Enter Arrival Time: "); 
 		scanf("%d",&arrival_time[i]);
-		if(arrival_time[i]<0)
-		{
-			printf("Invalid Input. Please try again...\n");
-			goto y;				
-		}
-		z:
+		
 		printf("Enter Burst Time: "); 
 		scanf("%d",&burst_time[i]);
-		if(burst_time[i]<=0)
-		{
-			printf("Invalid Input. Please try again...\n");
-			goto z;				
-		}
+		
 		printf("\n");
 	}
 	printf("\n\n\n\n");	
