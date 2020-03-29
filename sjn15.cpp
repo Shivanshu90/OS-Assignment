@@ -153,20 +153,6 @@ int main()
 			wait_time[i]=turn_around_time[i]-burst_time[i];
 			watt=watt+wait_time[i];
 		}
-		//Checking the condition if CPU becomes idle.
-		for(i=0;i<n;i++)
-		{
-			if(wait_time[i]<0)
-			{
-				w=wait_time[i];
-				w=-w;
-				wait_time[i]=wait_time[i]+w;
-				ct[i]=ct[i]+w;
-				turn_around_time[i]=turn_around_time[i]+w;
-				watt=watt+wait_time[i]+w;
-			}
-		}
-		
 		printf("\n\n\n");
 			
 		printf(" \t\t\t-------------------------After Scheduling------------------------\n\n\n");
